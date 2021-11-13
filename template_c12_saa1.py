@@ -27,8 +27,8 @@ class Bird:
 class Pipe:
     def __init__(self,x):
         self.height=random.randint(150,400)
-        self.tpipe=pygame.Rect(x,self.height-400,40,320)
-        self.bpipe=pygame.Rect(x,self.height+100,40,500)
+        self.tpipe=pygame.Rect(x,self.height-400,40,400)
+        self.bpipe=pygame.Rect(x,self.height+150,40,400)
     def display(self):
       screen.blit(images["pipe"],self.bpipe)
       screen.blit(images["invertedpipe"],self.tpipe)
